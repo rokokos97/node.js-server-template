@@ -22,7 +22,11 @@
     "baseUrl": "./",
     "paths": {
       "*": ["node_modules/*"]
-    }
+    },
+    "typeRoots": [
+      "./src/types", // Вказуємо директорію з типами
+      "./node_modules/@types"
+    ]
   },
   "include": ["src/**/*"],                          // Включає всі файли з директорії src.
   "exclude": ["node_modules", "dist"]          // Виключає директорії node_modules та dist.
