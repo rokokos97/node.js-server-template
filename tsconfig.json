@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                       // Вказує, на яку версію JavaScript компілювати.
+    "module": "ESNext",                       // Вказує, який модульний стандарт використовувати.
+    "moduleResolution": "node",               // Визначає стратегію завантаження модулів.
+    "declaration": true,                      // Генерує файли декларацій (.d.ts).
+    "sourceMap": true,                        // Генерує файли source maps.
+    "outDir": "./dist",                       // Директорія, куди буде виводитись зкомпільований код.
+    "rootDir": "./src",                       // Директорія, яка містить вихідний код.
+    "strict": true,                           // Включає всі строгі перевірки типів.
+    "esModuleInterop": true,                  // Додає сумісність з CommonJS модулями.
+    "skipLibCheck": true,                     // Пропускає перевірку типів у файлах декларацій.
+    "forceConsistentCasingInFileNames": true, // Примушує файли бути однаковими у відносних шляхах.
+    "resolveJsonModule": true,                // Дозволяє імпорт JSON файлів.
+    "noImplicitAny": true,                    // Заставляє явно визначати тип any.
+    "noUnusedLocals": true,                   // Включає перевірку невикористаних локальних змінних.
+    "noUnusedParameters": true,               // Включає перевірку невикористаних параметрів функцій.
+    "noFallthroughCasesInSwitch": true,       // Забороняє проходження через case у switch.
+    "allowJs": true,                          // Дозволяє компіляцію JavaScript файлів.
+    "checkJs": true,                          // Включає перевірку типів у JavaScript файлах.
+    "incremental": true,                       // Дозволяє збільшення часу компіляції за рахунок збереження попередніх результатів.
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["src/**/*"],                          // Включає всі файли з директорії src.
+  "exclude": ["node_modules", "dist"]          // Виключає директорії node_modules та dist.
+}
