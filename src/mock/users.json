@@ -2,31 +2,31 @@
   {
     "name": "Rachel Green",
     "email": "rachel.green@justfriends.com",
-    "age": 25
+    "age": "25"
   },
   {
     "name": "Monica Geller",
     "email": "monica.geller@justfriends.com",
-    "age": 25
+    "age": "25"
   },
   {
     "name": "Phoebe Buffay",
     "email": "phoebe.buffay@justfriends.com",
-    "age": 31
+    "age": "31"
   },
   {
     "name": "Joey Tribbiani",
     "email": "joey.tribbiani@justfriends.com",
-    "age": 25
+    "age": "25"
   },
   {
     "name": "Chandler Bing",
     "email": "chandler.bing@justfriends.com",
-    "age": 26
+    "age": "26"
   },
   {
     "name": "Ross Geller",
     "email": "ross.geller@justfriends.com",
-    "age": 27
+    "age": "27"
   }
 ]
