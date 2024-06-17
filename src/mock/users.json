@@ -2,31 +2,31 @@
   {
     "name": "Rachel Green",
     "email": "rachel.green@justfriends.com",
-    "password": "a8Jr9cX3fG5d"
+    "age": 25
   },
   {
     "name": "Monica Geller",
     "email": "monica.geller@justfriends.com",
-    "password": "H6tDp9R4sF8y"
+    "age": 25
   },
   {
     "name": "Phoebe Buffay",
     "email": "phoebe.buffay@justfriends.com",
-    "password": "N2qLd7M8kV5p"
+    "age": 31
   },
   {
     "name": "Joey Tribbiani",
     "email": "joey.tribbiani@justfriends.com",
-    "password": "R1kGq5W7zT3m"
+    "age": 25
   },
   {
     "name": "Chandler Bing",
     "email": "chandler.bing@justfriends.com",
-    "password": "J4fLr8P2vD6s"
+    "age": 26
   },
   {
     "name": "Ross Geller",
     "email": "ross.geller@justfriends.com",
-    "password": "T5mGq1N6rK4y"
+    "age": 27
   }
 ]
