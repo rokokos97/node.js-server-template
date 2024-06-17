@@ -26,8 +26,9 @@
     "typeRoots": [
       "./src/types", // Вказуємо директорію з типами
       "./node_modules/@types"
-    ]
+    ],
+    "moduleDetection": "force"                // Включає визначення модулів навіть без використання ключових слів import/export.
   },
   "include": ["src/**/*"],                          // Включає всі файли з директорії src.
-  "exclude": ["node_modules", "dist"]          // Виключає директорії node_modules та dist.
+  "exclude": ["node_modules"]          // Виключає директорії node_modules та dist.
 }
