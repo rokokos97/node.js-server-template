@@ -2,11 +2,12 @@ import 'dotenv/config';
 import express, { Request, Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import helmet from 'helmet';
 import * as mongoose from 'mongoose';
 import * as process from 'process';
 import { initialDataBase } from './startup/initialDataBase.js';
 import router from './routes/index.js';
-import corsOptions from './config/corsOptions';
+import corsOptions from './config/corsOptions.js';
 const envFile =
   process.env.NODE_ENV === 'production'
     ? '.env.production'
@@ -17,10 +18,21 @@ const app: express.Application = express();
 const PORT: number = parseInt(process.env.PORT || '8080', 10);
 
 app.use(cors(corsOptions));
+app.use(helmet());
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'"],
+      objectSrc: ["'none'"],
+      upgradeInsecureRequests: [],
+    },
+  }),
+);
 app.use('/api', router);
 
 app.get('/', (req: Request, res: Response) => {
-  console.log('req', req);
+  console.log('req.body', req.body);
   res.send('Hello, World!');
 });
 async function start(): Promise<void> {
